@@ -324,7 +324,7 @@ def df_drop_string_columns(
 
 def df_uncorrelated_features(
     df: pd.DataFrame, exclude_list: list[str] | None = None, threshold: float = 0.7
-):
+) -> pd.DataFrame:
     """Return an uncorrelated set of features.
 
     Adapted from edbo (https://github.com/b-shields/edbo ,
